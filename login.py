@@ -2,8 +2,9 @@
 
 from HduSrunLogin.LoginManager import LoginManager
 
-lm = LoginManager()
-lm.login(
-    username="Your srun account",
-    password="Your password"
-)
+def auto_login(username:str, pasword:str):
+    lm = LoginManager()
+    lm.login(
+        username=username,
+        password=pasword
+    )
