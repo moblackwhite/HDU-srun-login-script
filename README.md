@@ -4,17 +4,16 @@
 
 # 运行依赖
 
-```
-python3
-python3-requests
+```SHELL
+uv sync
 ```
 
 # 使用说明
 
 登录操作需要两步：
 
-1. 修改`login.py`文件填入数字杭电的帐号和密码
-2. 执行`login.py`或`python3 login.py`命令即可登录iHDU校园网
+1. 将`.env.example`文件填入数字杭电的帐号和密码, 并将`.env.example`改名为`.env`
+2. 执行`uv run login.py`命令即可登录iHDU校园网
 
 注意：确保`HduSrunLogin`文件夹与`login.py`位于同一目录中。
 
