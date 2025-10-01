@@ -15,6 +15,7 @@ uv sync
 1. 将`.env.example`文件填入数字杭电的帐号和密码, 并将`.env.example`改名为`.env`
 2. 执行`uv run login.py`命令即可登录iHDU校园网
 
+密码安全：运行程序后，可以手动删除`.env`文件。保证账号和密码不被泄露。
 注意：确保`HduSrunLogin`文件夹与`login.py`位于同一目录中。
 
 # 参考链接

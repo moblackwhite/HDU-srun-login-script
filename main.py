@@ -12,8 +12,6 @@ logger = setup_logger()
 def check_login():
     """检查网络并尝试登录"""
     try:
-        load_dotenv()  # 加载环境变量
-
         username = os.getenv("USERNAME")
         password = os.getenv("PASSWORD")
 
@@ -29,6 +27,7 @@ def check_login():
         logger.error(f"检查网络时发生未知错误: {e}")
 
 if __name__ == "__main__":
+    load_dotenv()  # 加载环境变量
     # 立即执行一次
     logger.info("=== 网络自动登录守护程序启动 ===")
     check_login()
